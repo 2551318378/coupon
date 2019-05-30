@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta charset="utf-8">
-<title>Hompage</title>
+<title>Welcome to BonusExchange platform Home page</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -27,97 +27,113 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="index clearfix">
   <div class="index1">
     <ul>
-      <li>Bank</li>
-      <li>Airline</li>
-      <li>Supermarket</li>
-      <li>Restaurant</li>
-      <li>MegaMalls</li>
-      <li style="border:none">Other</li>
+      <li>信用</li>
+      <li>房型</li>
+      <li>地段</li>
+      <li>金额</li>
+      <li style="border:none">其他</li>
     </ul>
   </div>
   <div class="index2">
     <div>
-      <p class="title">Merchant<span class="more title1"><a href="#">More</a></span></p>
+      <p class="title">区域<span class="more title1"><a href="#">More</a></span></p>
     </div>
     <div id="shop-list"  class="clearfix">
       <ul>
-        <li><a><img src="images/shopLogo/beifanghangkong.jpg"/>
-          <p class="shopName">HaiyingAirlines</p>
+        <li><a><img src="images/localLogo/YX.png"/>
+          <p class="shopName">越秀</p>
           </a></li>
-        <li><a><img src="images/shopLogo/changanhangkong.jpg"/>
-          <p class="shopName">BITAirlines</p>
+        <li><a><img src="images/localLogo/HZ.png"/>
+          <p class="shopName">海珠</p>
           </a></li>
-        <li><a><img src="images/shopLogo/changchenghangkong.jpg"/>
-          <p class="shopName">YulongAirlines</p>
+        <li><a><img src="images/localLogo/LW.png"/>
+          <p class="shopName">荔湾</p>
           </a></li>
-        <li><a><img src="images/shopLogo/dongfanghangkong.jpg"/>
-          <p class="shopName">AncelottiAirlines</p>
+        <li><a><img src="images/localLogo/ZC.png"/>
+          <p class="shopName">增城</p>
           </a></li>
-        <li><a><img src="images/shopLogo/shanghaihangkong.jpg"/>
-          <p class="shopName">HuAirlines</p>
+        <li><a><img src="images/localLogo/HP.png"/>
+          <p class="shopName">黄埔</p>
           </a></li>
-        <li><a><img src="images/shopLogo/shenzhenhangkong.jpg"/>
-          <p class="shopName">YuanDaAirlines</p>
+        <li><a><img src="images/localLogo/HD.png"/>
+          <p class="shopName">花都</p>
           </a></li>
-        <li><a><img src="images/shopLogo/sichuanhangkong.jpg"/>
-          <p class="shopName">KongMingAirlines</p>
+        <li><a><img src="images/localLogo/TH.png"/>
+          <p class="shopName">天河</p>
           </a></li>
-        <li><a><img src="images/shopLogo/wuhanhangkong.jpg"/>
-          <p class="shopName">VDAirlines</p>
+        <li><a><img src="images/localLogo/CH.png"/>
+          <p class="shopName">从化</p>
           </a></li>
-        <li><a><img src="images/shopLogo/xiamenhangkong.jpg"/>
-          <p class="shopName">636Airlines</p>
+        <li><a><img src="images/localLogo/PY.png"/>
+          <p class="shopName">番禺</p>
           </a></li>
-        <li><a><img src="images/shopLogo/zhongguoguoji.jpg"/>
-          <p class="shopName">CunAirlines</p>
+        <li><a><img src="images/localLogo/BY.png"/>
+          <p class="shopName">白云</p>
+          </a></li>
+        <li><a><img src="images/localLogo/NS.png"/>
+          <p class="shopName">南沙</p>
+          </a></li>
+        <li><a><img src="images/localLogo/LG.png"/>
+          <p class="shopName">萝岗</p>
+          </a></li>
+        <li><a><img src="images/localLogo/SD.png"/>
+          <p class="shopName">顺德</p>
+          </a></li>
+        <li><a><img src="images/localLogo/CC.png"/>
+          <p class="shopName">禅城</p>
+          </a></li>
+        <li><a><img src="images/localLogo/QT.png"/>
+          <p class="shopName">其他</p>
           </a></li>
       </ul>
     </div>
     <div>
-      <p class="title">Newly released<span class="more title1"><a href="#">More</a></span></p>
+      <p class="title">房源<span class="more title1"><a href="#">更多房源</a></span></p>
     </div>
     <div id="order-list" class="clearfix"> 
       <!---- 事例1------>
       <div class="order-info clearfix">
         <ul >
-          <li class="shop-logo"><img src="images/shopLogo/dongfanghangkong.jpg"/></li>
+          <li class="shop-logo"><a href="实验代码.html"><img src="images/house/1.png"/></a></li>
           <li class="info">
             <table>
               <tr>
-                <td>Merchant:AncelottiAirlines</td>
-                <td>Target merchant:636Airlines</td>
+                <td>区域:越秀</td>
+                <td>租金：1000</td>
               </tr>
               <tr>
-                <td>Number of bonus:100</td>
-                <td>Number of Target bonus:120</td>
+                <td>房型：一房一厅</td>
+                <td>租期：半年以上</td>
               </tr>
               <tr>
-                <td>Deadline:2016-11-20</td>
+                <td>房东电话：123456789</td>
                 <td></td>
               </tr>
             </table>
           </li>
           <li class="operate">
-            <input name="exchange" type="button" class="submitBtn" id="exchange" value="Exchange">
+  	 <form action="/bonusPointsExchange/ReferencePriceServlet" method="post">
+        <input href="index.jsp" name="exchange" type="button" class="submitBtn" id="exchange" value="Exchange">
+      </form>           
           </li>
         </ul>
       </div>
       <!-----事例2------>
       <div class="order-info clearfix " >
         <ul>
-          <li class="shop-logo"><img src="images/shopLogo/changanhangkong.jpg"/></li>
+          <li class="shop-logo"><img src="images/house/2.png"/></li>
           <li class="info">
             <table>
               <tr>
-                <td>Merchant:AncelottiAirlines</td>
-                <td>Target merchant:636Airlines</td>
+                <td>区域:白云</td>
+                <td>租金：2300</td>
               </tr>
               <tr>
-                <td>Number of bonus:100</td>
-                <td>Number of Target bonus:120</td>
+                <td>房型：二房一卫一厅</td>
+                <td>租期：一年以上</td>
               </tr>
               <tr>
-                <td>Deadline:2016-11-20</td>
+                <td>房东电话：13694297273</td>
                 <td></td>
               </tr>
             </table>
@@ -130,19 +146,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <!------事例3------->
       <div class="order-info clearfix " >
         <ul>
-          <li class="shop-logo"><img src="images/shopLogo/changchenghangkong.jpg"/></li>
+          <li class="shop-logo"><img src="images/house/3.png"/></li>
           <li class="info">
             <table>
               <tr>
-                <td>Merchant:AncelottiAirlines</td>
-                <td>Target merchant:636Airlines</td>
+                <td>区域:白云</td>
+                <td>租金：2800</td>
               </tr>
               <tr>
-                <td>Number of bonus:100</td>
-                <td>Number of target bonus:120</td>
+                <td>房型：三房一厅两卫</td>
+                <td>租期：一年以上</td>
               </tr>
               <tr>
-                <td>Deadline:2016-11-20</td>
+                <td>房东电话：13694297273</td>
                 <td></td>
               </tr>
             </table>
@@ -155,19 +171,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <!------事例4------->
       <div class="order-info clearfix " >
         <ul>
-          <li class="shop-logo"><img src="images/shopLogo/dongfanghangkong.jpg"/></li>
+          <li class="shop-logo"><img src="images/house/4.png"/></li>
           <li class="info">
             <table>
               <tr>
-                <td>Merchant:AncelottiAirlines</td>
-                <td>Target merchant:636Airlines</td>
+                <td>区域:天河</td>
+                <td>租金：3000</td>
               </tr>
               <tr>
-                <td>Number of bonus100</td>
-                <td>Number of Target bonus120</td>
+                <td>房型：两房一厅</td>
+                <td>租期：半年以上</td>
               </tr>
               <tr>
-                <td>Deadline:2016-11-20</td>
+                <td>房东电话：1234567891011</td>
                 <td></td>
               </tr>
             </table>
@@ -180,19 +196,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <!------事例5------->
       <div class="order-info clearfix " >
         <ul>
-          <li class="shop-logo"><img src="images/shopLogo/shanghaihangkong.jpg"/></li>
+          <li class="shop-logo"><img src="images/house/5.png"/></li>
           <li class="info">
             <table>
               <tr>
-                <td>Merchant:AncelottiAirlines</td>
-                <td>TargetAirlines:636Airlines</td>
+                <td>区域:越秀</td>
+                <td>租金：800</td>
               </tr>
               <tr>
-                <td>Number of bonus:100</td>
-                <td>Number of target bonus:120</td>
+                <td>房型：单房</td>
+                <td>租期：半年以上</td>
               </tr>
               <tr>
-                <td>Deadline:2016-11-20</td>
+                <td>房东电话：12345678901011</td>
                 <td></td>
               </tr>
             </table>

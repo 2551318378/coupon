@@ -90,10 +90,10 @@ function checkForm() {
 <!--这是main_page-->
   <div class="login-frame">
     <div>
-      <p class="title">&nbsp;&nbsp;Login as User&nbsp;&nbsp;<span class="title1">USER LOGIN</span><span class="title1 right"><a href="login_shop.jsp">Login as Merchant</a>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+      <p class="title">&nbsp;&nbsp;租客登录&nbsp;&nbsp;<span class="title1">USER LOGIN</span><span class="title1 right"><a href="login_shop.jsp">房东登录</a>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
     </div>
     <div class="span3">
-      <div class="ad"> <img src="images/ad3.jpg" alt="Advertisement"/> </div>
+      <div class="ad"> <img src="images/logo.png" alt="Advertisement"/> </div>
     </div>
     <div class="span4">
       <form name="form_login" class="login-form normal-font" action="/bonusPointsExchange/actionServlet" method="post" onsubmit="return checkForm();">
@@ -111,7 +111,7 @@ function checkForm() {
             <td class="mid"><input name="reset" type="reset" class="submitBtn" id="reset" value="Reset"></td>
           </tr>
         </table>
-       <div class="mes" ><a href="regist.jsp">Free registration&nbsp;&nbsp; </a><a href="/bonusPointsExchange/retrievePassword_1.jsp?method=forgetPasswd_user">Forgot password?</a></div>
+       <div class="mes" ><a href="regist.jsp">免费注册&nbsp;&nbsp; </a><a href="/bonusPointsExchange/retrievePassword_1.jsp?method=forgetPasswd_user">忘记密码</a></div>
        <input type="hidden" name="actionCode" value="log"/>
        <input type="hidden" name="methodCode" value="login"/>
       </form>

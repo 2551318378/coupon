@@ -8,10 +8,10 @@
   <div class="span2">
     <div class="mainNav">
       <ul>
-        <li><a href="index.jsp">Homepage</a></li>
-        <li><a href="reference.jsp">Reference price</a></li>
-        <li><a href="/bonusPointsExchange/QueryLatestOrder">Newly released</a></li>
-        <li><a href="/bonusPointsExchange/actionServlet?actionCode=bindShop&methodCode=find_bindedShops">Initiate transaction</a></li>
+        <li><a href="index.jsp">主页</a></li>
+        <li><a href="reference.jsp">二手房</a></li>
+        <li><a href="/bonusPointsExchange/QueryLatestOrder">新发布</a></li>
+        <li><a href="/bonusPointsExchange/actionServlet?actionCode=bindShop&methodCode=find_bindedShops">交换</a></li>
     <%
 	String isUserLogin = (String)session.getAttribute("userName"); 
 	String isShopLogin = (String)session.getAttribute("shopName"); 
@@ -20,7 +20,7 @@
 	<li><a href="login.jsp">My account</a> </li>
 <% } else if(isUserLogin != null && isShopLogin == null){%>
 	 <li  style="font-size:24px;">
-	<a href="/bonusPointsExchange/actionServlet?actionCode=user&methodCode=query_user_info"><%=session.getAttribute("userName") %></a><a href="/bonusPointsExchange/actionServlet?actionCode=log&methodCode=logout&logType=user"><span style="font-size:24px;">|Logout</span></a></li>	
+	<a href="index.html"><%=session.getAttribute("userName") %></a><a href="/bonusPointsExchange/actionServlet?actionCode=log&methodCode=logout&logType=user"><span style="font-size:24px;">|Logout</span></a></li>	
 	 <% } else if(isShopLogin != null && isUserLogin == null){%>
 	 <li style="font-size:24px;">
 	<a href="/bonusPointsExchange/QueryShopInfoServlet"><%=session.getAttribute("shopName") %></a><a href="/bonusPointsExchange/actionServlet?actionCode=log&methodCode=logout&logType=shop"><span style="font-size:24px;">|Logout</span></a></li>	
